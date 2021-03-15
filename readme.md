@@ -2,6 +2,24 @@
 
 Computes average path segments from an ensemble of paths.
 
+## How to use
+
+Add this line to `~/.npmrc` to set up the package registry:
+```shell
+@indoor-analytics:registry=https://npm.pkg.github.com/indoor-analytics
+```
+
+In your project, install the package:
+```shell
+npm i --save @indoor-analytics/multi-path
+```
+
+Import the function in your code:
+```javascript
+import {ClusteringTree} from "@indoor-analytics/multi-path";
+```
+
+
 # Algorithm formalization
 
 ```text
