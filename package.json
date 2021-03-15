@@ -1,6 +1,6 @@
 {
   "name": "@indoor-analytics/multi-path",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Computes average path segments from an ensemble of paths.",
   "main": "src/main.js",
   "types": "src/main.d.ts",
