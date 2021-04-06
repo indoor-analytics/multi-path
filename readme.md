@@ -20,7 +20,7 @@ import {ClusteringTree} from "@indoor-analytics/multi-path";
 ```
 
 
-# Algorithm formalization
+## Algorithm formalization
 
 ```text
 On définit une zone d’intérêt ZOI (Zone of Interest) comme par exemple une salle ou un bâtiment ou un étage.
@@ -69,7 +69,7 @@ POUR CHAQUE ZOI “intermédiaire”:
 Une fois à la ZOI racine, on a donc un ensemble de tuples  <pme(ce),pms(cs),N> qui sont des segments (SRC,DST) du graphe de flux où N donne la popularité du segment.
 ```
 
-# Clustering example
+## Clustering example
 
 By default, the library uses a square to encapsulate the original zone of interest; to increase the tree depth, it divides
 each square into four area-equivalent squares.
@@ -105,7 +105,7 @@ In this example, we want a clustering tree with a depth of 6.
 ![tree with depth = 6](docs/img/clustering/depth6.png)
 
 
-# Average path extraction example
+## Average path extraction example
 
 Hosted on https://gist.github.com/Alystrasz/a9f647a75b99a4fc7b7f1f24510a38c5
 
@@ -121,7 +121,7 @@ average exit locations are marked in purple.
     * second one starting from average entrance location on top boundary.
 * path (to the right) from bottom boundary average entrance to top boundary average exit.
 
-# Indoor analytics integration example
+## Indoor analytics integration example
 
 Here is an example of clustering on 7 paths.
 You'll find below the images links to gists for each step.
@@ -141,3 +141,8 @@ You'll find below the images links to gists for each step.
 5. depth 4: https://gist.github.com/Alystrasz/ff6066c583411808c8057e0be0e10a0d
 6. depth 5: https://gist.github.com/Alystrasz/efd85a38dfe2af7aed1406ac0957b260
 7. depth 6: https://gist.github.com/Alystrasz/9b99be7a7f6adb8ee27853e86a29ea0c
+
+## TODOs
+
+* test extractAveragePath with a path beginning from and ending on a same vertex
+* generate clusters with weight > 2
